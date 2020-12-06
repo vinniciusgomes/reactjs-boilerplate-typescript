@@ -4,10 +4,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import GlobalStyle from '@styles/Global';
 import theme from '@styles/Theme';
+
 import AppProvider from './hooks';
 import Routes from './routes';
 
-const App: React.FC = () => {
+const Bootstrap: React.FC = () => {
   return (
     <AppProvider>
       <ThemeProvider theme={theme}>
@@ -20,4 +21,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Bootstrap;

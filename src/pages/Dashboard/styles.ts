@@ -7,11 +7,14 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   h1 {
+    font-weight: 500;
     font-size: 54px;
-    color: #121214;
+    color: #00d9ff;
     margin-top: 40px;
   }
+
   p {
     margin-top: 24px;
     font-size: 24px;

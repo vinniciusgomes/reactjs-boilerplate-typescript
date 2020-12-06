@@ -19,9 +19,12 @@
 src
 |-- assets
 |-- components
+|-- hooks
+|-- mocks
 |-- pages
 |-- routes
 |-- services
+|-- styles
 |-- utils
 |-- App.tsx
 |-- index.tsx
