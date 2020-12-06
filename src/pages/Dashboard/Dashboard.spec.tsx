@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 
 import Dashboard from '.';
 
-describe('Dashboard screen', () => {
+describe('Dashboard', () => {
   it('should be able to render screen', () => {
     const { getAllByText } = render(<Dashboard />);
 
