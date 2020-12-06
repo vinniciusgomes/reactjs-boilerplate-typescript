@@ -12,7 +12,6 @@
     "axios": "^0.21.0",
     "connected-react-router": "^6.8.0",
     "customize-cra": "^1.0.0",
-    "history": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -23,12 +22,17 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
+    "prettier": "prettier --write . \"./src/**/*.{ts,tsx,js,jsx}\"",
+    "lint": "./node_modules/.bin/eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\"",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -60,7 +64,17 @@
     "eslint-plugin-prettier": "^3.2.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.4",
     "prettier": "^2.2.1",
     "react-app-rewired": "^2.1.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier && npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
