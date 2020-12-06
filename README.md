@@ -1,13 +1,16 @@
 # React Reference Architecture
 
 ## Develop
+
 `npm start`
 [https://localhost:3000]
 
 ## Build
+
 `npm run build`
 
 ## Unit Tests
+
 `npm test`
 
 **This is your source code tree:**
@@ -25,7 +28,7 @@ src
 ...
 ```
 
-Every item created inside components,  pages... will be a folder with their code, the tests file, and to keep your code simple and short you can add extra files for helpers or styles it this folder. The folder structure will look like this:
+Every item created inside components, pages... will be a folder with their code, the tests file, and to keep your code simple and short you can add extra files for helpers or styles it this folder. The folder structure will look like this:
 
 ```
 ...
