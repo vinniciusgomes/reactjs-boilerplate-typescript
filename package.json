@@ -5,10 +5,6 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.5.0",
-    "@types/jest": "^26.0.16",
-    "@types/node": "^14.14.10",
-    "@types/react-dom": "^17.0.0",
     "axios": "^0.21.0",
     "connected-react-router": "^6.8.0",
     "customize-cra": "^1.0.0",
@@ -51,7 +47,11 @@
   },
   "devDependencies": {
     "@testing-library/react-hooks": "^3.3.0",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/jest": "^26.0.16",
+    "@types/node": "^14.14.10",
     "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
     "@types/seamless-immutable": "^7.1.15",
     "@types/styled-components": "^5.1.4",
@@ -88,7 +88,7 @@
       "jest-canvas-mock"
     ],
     "moduleNameMapper": {
-      "\\.(woff2?|ttf|otf|eot|png|jpe?g|gif|svg|css|scss)$": "<rootDir>/mock/jest-mockfile.js",
+      "\\.(woff2?|ttf|otf|eot|png|jpe?g|gif|svg|css|scss|webp)$": "<rootDir>/mock/jest-mockfile.js",
       "^~\\/(.*)$": "<rootDir>/src/$1"
     },
     "coverageReporters": [
