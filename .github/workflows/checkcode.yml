@@ -12,7 +12,7 @@ jobs:
     steps:
 
       - name: Archref Repository
-        uses: actions/Archref@v2
+        uses: actions/checkout@v2
 
       - name: Setup Node  ${{ matrix.node_version }}
         uses: actions/setup-node@v2
