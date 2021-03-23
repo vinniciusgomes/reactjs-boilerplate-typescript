@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         {mode}
       </Header>
       <h1>Reference Architecture - ReactJS</h1>
-      <p>A ReactJS + TypeScript structure.</p>
+      <p>A ReactJS + TypeScript structure</p>
     </Container>
   );
 };
