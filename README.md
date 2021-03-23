@@ -27,6 +27,8 @@ src
 |-- models
 |-- pages
 |-- routes
+|-- services
+|-- styles
 |-- utils
 |-- Bootstrap.tsx
 |-- App.tsx
@@ -43,7 +45,6 @@ components
     |-- index.tsx
     |-- styles.ts
     |-- YourComponent.spec.ts
-    |-- YourComponent.stories.ts
 ...
 ```
 
@@ -54,14 +55,6 @@ Here will be all your project assets as images, icons...
 `./components`
 
 Components are presentational only elements, grouping UI items
-
-`./pages`
-
-Pages are mapped in routes and have all the containers needed to implement a functionality
-
-`./routes`
-
-Routes contains the `react-router-dom` implementation to map the project's routes to the respective pages
 
 `./hooks`
 
@@ -74,6 +67,23 @@ All mock data for your unit testes
 `./models`
 
 global interfaces and models that your project needs
+
+
+`./pages`
+
+Pages are mapped in routes and have all the containers needed to implement a functionality
+
+`./routes`
+
+Routes contains the `react-router-dom` implementation to map the project's routes to the respective pages
+
+`./services`
+
+Directory to keep all external service settings to share across the project
+
+`./styles`
+
+Directory to keep all global styles to share throughout the project
 
 `./utils`
 
