@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { textColorPrimary } from 'styles/theme';
 
 export const Container = styled.div`
