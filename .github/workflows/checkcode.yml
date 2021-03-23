@@ -10,9 +10,9 @@ jobs:
         node_version: ['14']
         os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
-      
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+
+      - name: Archref Repository
+        uses: actions/Archref@v2
 
       - name: Setup Node  ${{ matrix.node_version }}
         uses: actions/setup-node@v2
@@ -20,11 +20,11 @@ jobs:
           node-version: ${{ matrix.node_version }}
 
       - name: npm install, Install dependencies
-        run: npm install  
+        run: npm install
 
       - name: Linting
         run: npm run lint
-        
+
       - name: Audit
         run: yarn  audit
 
@@ -33,6 +33,4 @@ jobs:
 
       - name: Build
         run: npm run build
-      
-      - name: Build StoryBook
-        run: npm run build
+
