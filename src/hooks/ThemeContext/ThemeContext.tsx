@@ -1,22 +1,9 @@
-import React, {
-  createContext,
-  FC,
-  useCallback,
-  useContext,
-  useState,
-} from 'react';
+import { createContext, FC, useCallback, useContext, useState } from 'react';
 
 import { ThemeProvider } from 'styled-components';
+import { Wrapper } from 'styles';
 
-import { Wrapper } from '../styles';
-
-interface IThemeState {
-  mode: 'dark' | 'light';
-}
-interface IMyThemeContext {
-  toggle(): void;
-  themeState: IThemeState;
-}
+import { IMyThemeContext, IThemeState } from './interfaces';
 
 const ThemeToggleContext = createContext({} as IMyThemeContext);
 
@@ -27,6 +14,7 @@ export const MyThemeProvider: FC = ({ children }) => {
 
   const toggle = useCallback(() => {
     const mode = themeState.mode === 'light' ? `dark` : `light`;
+
     setThemeState({ mode });
   }, [setThemeState, themeState]);
 

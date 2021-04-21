@@ -1,9 +1,7 @@
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-import Loading from 'components/Loading/Loading';
-import { SplashProvider } from 'hooks/LoadingContext';
-import { MyThemeProvider } from 'hooks/ThemeContext';
+import { Loading } from 'components/Loading';
+import { SplashProvider, MyThemeProvider } from 'hooks';
 import Routes from 'routes';
 import GlobalStyles from 'styles/global';
 

@@ -1,10 +1,9 @@
-import React from 'react';
 import { act } from 'react-dom/test-utils';
 
 import { fireEvent, render } from '@testing-library/react';
-import * as ThemeContext from 'hooks/ThemeContext';
+import * as ThemeContext from 'hooks/ThemeContext/ThemeContext';
 
-import Home from './Home';
+import { Home } from './Home';
 
 describe('<Home/>', () => {
   const toggle = jest.fn();

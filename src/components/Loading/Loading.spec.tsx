@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import Bootstrap from './Bootstrap';
+import { Loading } from './Loading';
 
-describe('<Bootstrap />', () => {
+describe('<Loading />', () => {
   it('should render', () => {
-    const component = render(<Bootstrap />);
+    const component = render(<Loading />);
     expect(component).toBeTruthy();
   });
 });
