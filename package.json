@@ -6,7 +6,6 @@
     "start": "react-scripts start",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "lint": "./node_modules/.bin/eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\"",
-    "audit": "",
     "prettier": "prettier --write . \"./src/**/*.{ts,tsx,js,jsx}\"",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --watchAll false",
