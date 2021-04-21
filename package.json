@@ -10,7 +10,8 @@
     "prettier": "prettier --write . \"./src/**/*.{ts,tsx,js,jsx}\"",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --watchAll false",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "dependencies": {
     "axios": "^0.21.1",
