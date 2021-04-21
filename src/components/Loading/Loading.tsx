@@ -1,13 +1,11 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 
 import { Container } from './styles';
 
-const Loading: React.FC = () => {
+export const Loading: React.FC = memo(() => {
   return (
     <Container>
       <span>Splash Screen</span>
     </Container>
   );
-};
-
-export default memo(Loading);
+});

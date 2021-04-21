@@ -1,25 +1,10 @@
-import React, {
-  createContext,
-  FC,
-  useContext,
-  useEffect,
-  useState,
-} from 'react';
+import { createContext, FC, useContext, useEffect, useState } from 'react';
 
-interface ISplashContext {
-  isSplashScreenShowing: boolean;
-  setSplashScreenShowing: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-interface ISplashProvider {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  SplashScreen: FC<any>;
-  initSplash?: boolean;
-}
+import { ISplashContext, ISplashProvider } from './interfaces';
 
 const SplashContext = createContext({} as ISplashContext);
 
-export const DEFAULT_LOADING_WAIT_TIME = 500;
+const DEFAULT_LOADING_WAIT_TIME = 500;
 
 export const SplashProvider: FC<ISplashProvider> = ({
   SplashScreen,
@@ -33,6 +18,7 @@ export const SplashProvider: FC<ISplashProvider> = ({
       () => setSplashScreenShowing(false),
       DEFAULT_LOADING_WAIT_TIME,
     );
+
     return () => clearTimeout(timer);
   }, []);
 

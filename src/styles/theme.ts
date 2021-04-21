@@ -30,4 +30,6 @@ export const buttonTextColor = theme('mode', {
 export const Wrapper = styled.div`
   background-color: ${backgroundColor};
   color: ${textColorPrimary};
+
+  font-size: 1.6rem;
 `;

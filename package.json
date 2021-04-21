@@ -17,8 +17,8 @@
     "lodash": "^4.17.20",
     "node-sass": "^5.0.0",
     "polished": "^4.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-hook-form": "^6.15.5",
     "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
@@ -102,12 +102,7 @@
       "**/*.{tsx,jsx,ts}"
     ],
     "coveragePathIgnorePatterns": [
-      "styles.ts",
-      "global.ts",
-      "theme.ts",
-      "api.ts",
-      "reportWebVitals.ts",
-      "\\.d\\.ts$",
+      "^.+\\.ts$",
       "/src/assets/",
       "/node_modules/",
       "/src/index.tsx"
