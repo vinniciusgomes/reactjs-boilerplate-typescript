@@ -1,6 +1,6 @@
-import { lighten } from 'polished'
-import styled from 'styled-components'
-import theme from 'styled-theming'
+import { lighten } from 'polished';
+import styled from 'styled-components';
+import theme from 'styled-theming';
 
 export const backgroundColor = theme('mode', {
   light: '#fafafa',
